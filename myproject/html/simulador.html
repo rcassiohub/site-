@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/simulador.css">
+    <link rel="stylesheet" href="/script.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cima"><img src="../imagens/escoar123.png" alt="" class="escoar">
+        <nav class="lista">
+            <ul>
+                <li><a id="home" href="">Home</a></li>
+                <!-- <li><a id="contato" href="">Entre em contato</a></li> -->
+                <li><a id="sair" href="">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- SIMULADOR -->
+    <div class="titulo_simulador">
+        <h1>Seja bem vindo a nossa loja!</h1>
+    </div>
+    <div class="tudo_simulador">
+    <div class="simulador">
+        <aside class="frutas">
+            <div class="img_frutas">
+            </div>
+            <div class="img_frutas">
+            </div>
+            <div class="img_frutas">
+            </div>
+            <div class="img_frutas">
+            </div>
+        </aside>
+        <div class="box_left">
+            <div>
+                <img src="../imagens/lista-de-controle.png" alt="" id="img_lista">
+            </div>
+            <form class="lista_produtos">
+
+                <p>
+                    <label for="input_pera">PERA:</label> <br>
+                    <input type="number" id="qtd_pera">
+
+
+                </p>
+                <br>
+                <p>
+                    <label for="maca">MAÇÃ:</label> <br>
+                    <input type="number" id="qtd_maca">
+
+
+                </p>
+                <br>
+                <p>
+                    <label for="cereja">CEREJA:</label> <br>
+                    <input type="number" id="qtd_cereja">
+
+
+                </p>
+                <br>
+                <p>
+                    <label for="kiwi">KIWI:</label> <br>
+                    <input type="number" id="qtd_kiwi">
+
+
+                </p>
+                <br>
+                <button onclick="compra()" class="btn_comprar">Confirmar Compra</button> <br>
+            </form>
+        </div>
+        <div class="box_right">
+            <div>
+                <img src="../imagens/entrega.png" alt="" id="img_entrega">
+            </div>
+            <h1 id="titulo_compra">Status da sua compra:</h1>
+            <div id="resultado"></div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

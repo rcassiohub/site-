@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background-position: center;
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    margin-top:40px;
+    background:black;
+}
+
+/* .escoar{
+    width: 150px;
+    padding-top: 10px;
+    padding-left: 10px; 
+} */
+
+.boxesquerda{
+    height: 520px;
+    width: 834px;
+    float: left;
+    margin-top:50px;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+    
+
+.cadastrobox {
+    background:  rgba(255, 255, 255, 0.281);
+    height: 600px;
+    width: 470px;
+    float: right;
+    margin-top:50px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.cadastrobox #imglogin{
+   width: 90px;
+   padding-left:190px; 
+   padding-top: 20px; 
+}
+.cadastrobox #nome_input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    outline: none;
+    border-image: initial; 
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+     /* height: 30px;
+    border-bottom: black solid 5px;
+    border: none; */
+
+} .cadastrobox #nome{
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    font-family: helvetica;
+}
+.cadastrobox #texto{
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: white;
+    padding-left: 70px;
+}
+.boxesquerda #escoar{
+    width: 100%;
+    margin-top: 30px;
+}
+.cadastrobox #email_input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    outline: none;
+    border-image: initial; 
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+.cadastrobox #email{
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    font-family: helvetica;
+}
+.cadastrobox #senha_input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    outline: none;
+    border-image: initial; 
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+.cadastrobox #senha{
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    font-family: helvetica;
+}
+.cadastrobox #confirmar_input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    outline: none;
+    border-image: initial; 
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+.cadastrobox #confirmar{
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    font-family: helvetica;
+}
+.cadastrobox #botao{
+    font-family:Helvetica;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 165px;
+    float: left;
+    background: red;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    min-height: 21px;;
+}

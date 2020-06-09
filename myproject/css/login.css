@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background-position: center;
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    margin-top:40px;
+    background:black;
+}
+
+/* .escoar{
+    width: 150px;
+    padding-top: 10px;
+    padding-left: 10px; 
+} */
+
+.boxesquerda{
+    height: 520px;
+    width: 834px;
+    float: left;
+    margin-top:50px;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+    
+
+.loginbox {
+    background:  #b2b2b225; 
+    box-shadow: 1px 0px 15px #b2b2b2;
+    height: 520px;
+    width: 470px;
+    float: right;
+    margin-top:50px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.loginbox #imglogin{
+   width: 90px;
+   padding-left:190px; 
+   padding-top: 20px; 
+}
+.loginbox #usuario{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    outline: none;
+    border-image: initial; 
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+     /* height: 30px;
+    border-bottom: black solid 5px;
+    border: none; */
+
+} .loginbox #user{
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    font-family: helvetica;
+}
+.boxesquerda #escoar{
+    width: 100%;
+    margin-top: 30px;
+}
+.loginbox #password{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    outline: none;
+    border-image: initial; 
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+.loginbox #senha{
+    font-size: 20px;
+    color: white;
+    margin-left: 18px;
+    font-family: helvetica;
+}
+.loginbox #botao1{
+    font-family:Helvetica;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 50px;
+    float: left;
+    background: red;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    min-height: 21px;;
+}
+.loginbox #botao2{
+    font-size: 1.3rem;
+    color: white;
+    margin-right:50px;
+    float: right;
+    background: red;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    min-height: 21px;;
+}
