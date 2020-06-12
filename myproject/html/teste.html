@@ -8,19 +8,15 @@
     <link rel="stylesheet" href="../css/teste.css">
     <title>Document</title>
 </head>
-
-
 <body>
-
-    <div class="cima"><img src="../imagens/escoar.png" alt="" class="escoar">
-        <nav class="lista">
-            <ul>
-                <li><a id="home" href="">Home</a></li>
-                <li><a id="contato" href="">Entre em contato</a></li>
-                <li><a id="login" href="">Login</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+        <label class="logo"><img src="../imagens/escoar123.png" alt="" class="escoar"></label>
+        <ul>
+            <li><a class="active" href="">HOME</a></li>
+            <li><a href="">ENTRE EM CONTATO</a></li>
+            <li><a href="../html/login.html">LOGIN</a></li>
+        </ul>
+    </nav>
     <!-- MEIO -->
     <main class="conteudo">
         <div class="titulo">
@@ -79,35 +75,35 @@
                 </div>
             </div>
         </div>
-
     </main>
-    
+
     <!-- DIVISÓRIA -->
     <blockquote class="divisoria">
         <p>"Frutas finas"</p>
     </blockquote>
 
     <!-- ENTRE EM CONTATO -->
+    <section id="contato">
+        <div class="main-contato">
+            <h1 id="titulo_contato">Entre em contato</h1>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome:</label>
+                <input type="text" id="nomesobrenome" placeholder="Digite seu nome" class="input-padrao" required>
 
-    <div class="main-contato">
-        <h1 id="titulo_contato">Entre em contato</h1>
-        <form>
-            <label for="nomesobrenome">Nome e Sobrenome:</label>
-            <input type="text" id="nomesobrenome" placeholder="Digite seu nome" class="input-padrao" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="input-padrao" placeholder="escoar@email.com" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" class="input-padrao" placeholder="escoar@email.com" required>
+                <label for="telefone">Telefone:</label>
+                <input type="" id="telefone" class="input-padrao" placeholder="(00) 90000-0000" required>
 
-            <label for="telefone">Telefone:</label>
-            <input type="" id="telefone" class="input-padrao" placeholder="(00) 90000-0000" required>
+                <label for="mensagem">Mensagem</label> <br>
+                <textarea name="" id="mensagem" class="input-padrao"></textarea>
 
-            <label for="mensagem">Mensagem</label> <br>
-            <textarea a name="" id="mensagem" class="input-padrao"></textarea>
+                <input type="submit" class="enviar">
+            </form>
+        </div>
+    </section>
 
-            <input type="submit" class="enviar">
-        </form>
-    </div>
-    
     <!-- RODA PÉ -->
     <div class="rodape">
         <h3> 2007-2020 Escoar Frutas - Frutas Finas</h3>

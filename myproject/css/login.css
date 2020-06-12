@@ -51,16 +51,16 @@ body{
     font-size: 1.3rem;
     border-style: none none solid;
     color: rgb(255, 255, 255);
-    border-top-width: initial;
+    /* border-top-width: initial;
     border-right-width: initial;
     border-left-width: initial;
     border-top-color: initial;
     border-right-color: initial;
-    border-left-color: initial;
+    border-left-color: initial;*/
     outline: none;
     border-image: initial; 
     border-bottom: 2px solid rgb(255, 255, 255);
-    transition: all 0.3s ease-in 0s;
+    /* transition: all 0.3s ease-in 0s; */
     background: transparent;
      /* height: 30px;
     border-bottom: black solid 5px;

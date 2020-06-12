@@ -1,44 +1,73 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0; 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 body{
-    background:#FFFFFF;
+    background:white;
 }
 /* CABEÇALHO */
-.cima{
-    height: 100px;
+ .logo .escoar{
+     width: 150px;
+     float: left;
+     padding-top: 5px;
+     margin-left: 2%; 
+ }
+
+html, body {
+    font-family: sans-serif;
     width: 100%;
-    background: linear-gradient(40deg, rgb(250, 248, 248),#E8212F);
-    margin: 0;
+    height: 100%;
     padding: 0;
-    border-bottom:  black solid 5px;
+    margin: 0px;
+    scroll-behavior: smooth;
+   }
+ 
+
+nav {
+    background: #DA0E38; 
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid black;
 }
-.lista ul li a{
-    color: silver;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: helvetica;
+
+label.logo {
+    color:  white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
    
 }
-.lista ul li {
-    /* float: left; */
-    display: inline;
-}
-.lista{
-    float: right;
-    padding-top: 45px;
-}
-.lista a{
-    padding-right: 50px;
-    }
 
-.escoar{
-    width: 150px;
-    padding-top: 10px;
-    padding-left: 10px; 
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background: rgb(180, 17, 49);
+}
+ a:hover {
+    background: white;
+    transition: .5s;
+    color:black;
+}
+
 /* FIM DO CABEÇALHO */
 
 /* TITULO */
@@ -73,19 +102,19 @@ background-image: url('../imagens/frutas.png');
 background-repeat: no-repeat;
 background-position: center;
 background-size: 100%;
-float: left;
+float: right;
 height: 300px;
 width: 47%;
-margin-left: 30px;
 margin-top: 0;
     
 }
 .texto1{
 /* background: blue; */
-float: right;
+float: left;
 width: 47%;
 min-height: 10px;
 text-align: left;
+margin-left: 30px;
 
 }
 .conteudo_escoar .foto2{
@@ -93,16 +122,17 @@ background-image: url('../imagens/frutas.png');
 background-repeat: no-repeat;
 background-position: center;
 background-size: 100%;
-float: right;
+float: left;
 height: 300px;
 width: 47%;
-padding-left: 10px; 
+margin-left: 23px; 
 }
 .texto2{
-float: left;
+float: right;
 width: 47%;
 min-height: 20px;
 margin-left: 30px;  
+
 }
 
 /* BOX ESQUERDA */
@@ -137,7 +167,7 @@ margin-top:40px;
 
 .divisoria{
 clear: both;
-background:  linear-gradient(40deg, rgb(128, 65, 60), rgb(241, 143, 143),#E8212F);
+background:  #DA0E38;
 height: 100px;
 width: 95%;
 margin-left: 35px;
@@ -147,19 +177,20 @@ border-radius: 10px;
 .divisoria p{
 color: white;
 text-align: center;
-font-family: 'Poppins';
+font-family: sans-serif;
 font-size: 20px;
 padding-top: 40px;
 }
 
 /* CONTATO */
 .main-contato{
-margin: auto;
+position: relative;
+left: 35px;
 width: 40%;
 min-height: 400px;
-background: rgb(128, 65, 60);
+background: rgb(223, 30, 68);
 border-radius: 10px;
-box-shadow:2px 2px 15px  rgb(247, 38, 19);
+box-shadow:2px 2px 15px  brown;
 
 }
 .main-contato .input-padrao{
@@ -173,7 +204,7 @@ border-radius: 5px;
 box-shadow: 1px 0px 5px black;
 margin-top: 5px;
 }
-.enviar{
+.main-contato .enviar{
 margin-top: 5px;
 margin-left: 190px;
 margin-bottom: 5px;
@@ -181,11 +212,15 @@ width: 30%;
 padding: 10px;
 border: none;
 font-size: 17px;
-font-family: Arial, Helvetica, sans-serif;
+font-family: sans-serif;
 color: white;
-background: red;
+background: rgb(180, 17, 49) ;
 border: none;
 border-radius: 4px;
+}
+.enviar:hover{
+    background: white;
+    color: black;
 }
 
 
@@ -193,7 +228,7 @@ border-radius: 4px;
 padding-left: 20px;
 font-size: 17px;
 color: white;
-font-family: Arial, Helvetica, sans-serif;
+font-family:sans-serif;
 }
 .main-contato textarea{
 height: 100px;
@@ -213,7 +248,7 @@ color: black;
 .rodape{
 height: 100px;
 width: 100%;
-background: linear-gradient(40deg, rgb(128, 65, 60), rgb(241, 143, 143),#E8212F);
+background: #DA0E38;
 margin: 0;
 padding: 0;
 border-bottom: black solid 10px;
@@ -223,4 +258,50 @@ margin-top: 100px;
 text-align: center;
 color: white;
 padding-top: 40px;
+font-family: sans-serif;
 }
+
+
+
+/*.menus {
+   padding: 15px;
+   background: rgb(172, 3, 37);
+   border-radius: 5px;
+   padding-right: 30px;
+ }
+ .menus :hover{
+     background: white;
+     /* padding: 15px; */
+     /* border-radius: 5px; */
+   
+ /* }
+.lista ul li a{ 
+    color: silver;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: helvetica;
+   
+}
+.lista ul li {
+    float: left;
+    display: inline;
+    padding-right: 50px;
+}
+.lista{
+    float: right;
+    padding-top: 45px;
+} */
+
+/* .lista li {
+    float: right;
+    display: inline;
+    text-decoration: none;
+}
+
+
+.escoar{
+    width: 150px;
+    padding-top: 10px;
+    padding-left: 10px; 
+}  */
