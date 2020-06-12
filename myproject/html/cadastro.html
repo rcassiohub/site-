@@ -12,34 +12,34 @@
 <body>
 
     <!-- <img src="escoar.png" alt="" id="escoar"> -->
-    <div class="cadastro">
+    <section class="cadastro">
 
         <div class="boxesquerda">
             <img src="../imagens/escoar123.png" alt="" id="escoar">
         </div>
-        <div class="cadastrobox">
-            <span id="texto">Cadastro de seu usuário</span>
+        <form class="cadastrobox">
+            <label class="titulo_do_cadastro">Cadastro de seu usuário</label>
             <!-- <img src="icon.png" alt="" id="imglogin"> -->
             <br><br>
-            <span id="nome">Nome:</span>
+            <label for="nome_input">Nome:</label>
             <br> <br>
-            <input id="nome_input" autofocus placeholder="Nome">
+            <input id="nome_input" autofocus placeholder="Nome" class="input_cadastrar_padrao" required>
             <br> <br>
-            <span id="email">E-mail:</span>
+            <label for="email_input">E-mail:</label>
             <br> <br>
-            <input id="email_input" autofocus type="text" placeholder="Insira um e-mail">
+            <input id="email_input" autofocus type="email" placeholder="Insira um e-mail" class="input_cadastrar_padrao" required>
             <br> <br>
-            <span id="senha">Senha:</span>
+            <label for="senha_input">Senha:</label>
             <br> <br>
-            <input id="senha_input" autofocus type="password" placeholder="Insira uma senha">
+            <input id="senha_input" autofocus type="password" placeholder="Insira uma senha" class="input_cadastrar_padrao" required>
             <br> <br>
-            <span id="confirmar">Confirmar Senha:</span>
+            <label for="confirmar_input">Confirmar Senha:</label>
             <br> <br>
-            <input id="confirmar_input" autofocus type="password" placeholder="Confirme sua senha">
-            <button id="botao">cadastrar</button>
+            <input id="confirmar_input" autofocus type="password" placeholder="Confirme sua senha" class="input_cadastrar_padrao" required>
+          <input type="submit" class="botao_cadastrar" >
             
-        </div>
-    </div>
+        </form>
+    </section>
 
 
 
