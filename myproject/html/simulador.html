@@ -23,53 +23,70 @@
     </div>
     <div class="tudo_simulador">
         <div class="simulador">
-            <aside class="frutas">
-                <div class="img_frutas">
+            <div class="preco_dos_produtos">
+                <h3 class="titulo_dos_precos">PREÇO DOS PRODUTOS POR CAIXA:</h3> <br><br>
+                <ul>
+                    <li> <span>PERA:</span><br>R$20,00 a Caixa</li>
+                    <br> <br>
+                    <li><span>MAÇÃ:</span><br>R$25,00 a Caixa</li>
+                    <br> <br>
+                    <li><span>CEREJA:</span><br>R$50,00 a Caixa</li>
+                    <br> <br>
+                    <li><span>KIWI:</span><br>R$30,00 a Caixa</li>
+                </ul>
+                <div> <img src="../imagens/buy.png" alt="" class="img_buy"></div>
+            </div>
+            <!-- <aside class="frutas">
+                <div class="img_frutas1">
                 </div>
-                <div class="img_frutas">
+                <div class="img_frutas2">
                 </div>
-                <div class="img_frutas">
+                <div class="img_frutas3">
                 </div>
-                <div class="img_frutas">
+                <div class="img_frutas4">
+
                 </div>
-            </aside>
+            </aside> -->
             <div class="box_left">
                 <div>
-                    <img src="../imagens/lista-de-controle.png" alt="" id="img_lista">
+                    <img src="../imagens/lista-de-controle.png" alt="" class="img_listaProduto">
                 </div>
                 <form class="lista_produtos">
 
+
                     <p>
                         <label for="qtd_pera">PERA:</label> <br>
-                        <input type="number" id="qtd_pera">
+                        <input type="number" id="qtd_pera" placeholder="Quantidade" autofocus>
 
 
                     </p>
                     <br>
+
                     <p>
                         <label for="qtd_maca">MAÇÃ:</label> <br>
-                        <input type="number" id="qtd_maca">
+                        <input type="number" id="qtd_maca" placeholder="Quantidade">
 
 
                     </p>
                     <br>
                     <p>
                         <label for="qtd_cereja">CEREJA:</label> <br>
-                        <input type="number" id="qtd_cereja">
+                        <input type="number" id="qtd_cereja" placeholder="Quantidade">
 
 
                     </p>
                     <br>
+
                     <p>
-                        <label for="qtd_kiwi">KIWI:</label> <br>
-                        <input type="number" id="qtd_kiwi">
+                        <label for="qtd_kiwi">KIWI:</label><br>
+                        <input type="number" id="qtd_kiwi" placeholder="Quantidade">
 
 
                     </p>
                     <br>
 
                 </form>
-                <button onclick="comprar()" class="btn_comprar">Confirmar Compra</button> <br>
+                <button onclick="comprar()" class="btn_comprar">Verificar Compra</button> <br>
             </div>
             <div class="box_right">
                 <div>
@@ -77,9 +94,12 @@
                 </div>
                 <h1 id="titulo_compra">Status da sua compra:</h1>
                 <div id="resultado"></div>
-                <img src="" alt="" id="img_carrinho">
+
                 <br>
-                <span id="resultado_compra"></span>
+                <div id="confirmacao_da_compra"></div>
+                <button onclick="analisar()" class="confirmar_compra" style="display: none">Confirmar Compra</button> <br>
+                <p id="resultado_compra"> </p> <br> <br>
+                <img src="" alt="" id="img_carrinho">
             </div>
         </div>
     </div>

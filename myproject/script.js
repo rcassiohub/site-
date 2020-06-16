@@ -6,9 +6,12 @@ function comprar(){
     let ValorTotal = PERA + MACA + CEREJA + KIWI;
      
     if(ValorTotal > 0){
-        img_carrinho.src ="../imagens/vendas.png" ;
-        resultado_compra.innerHTML = "Sua compra foi realizada com sucesso!";
-        resultado.innerHTML = `O valor total da sua compra foi de: R$${ValorTotal},00`;
+        resultado.innerHTML = `O valor total da sua compra foi de: R$${ValorTotal},00 <br>`;
+        confirmacao_da_compra.innerHTML = ` <button onclick="analisar()" class="confirmar_compra" >Confirmar Compra</button>`
         // total_compra.src = '../imagens/escoar.png'
     } 
+}
+function analisar(){
+    img_carrinho.src ="../imagens/vendas.png" ;
+    resultado_compra.innerHTML = "Sua compra foi realizada com sucesso!";
 }
