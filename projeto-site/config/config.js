@@ -8,11 +8,11 @@ module.exports = {
     storage: ":memory:"
   },
   production: {
-    username: 'adminlocal',
-    password: '#Gfhosp1tal',
-    database: 'BDHospital',
-    host: 'serverhospital.database.windows.net',
-    dialect: 'mssql',
+    username: 'raphael',
+    password: 'raphaelcassio123',
+    database: 'escoar',
+    host: 'localhost',
+    dialect: 'mysql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
       options: {

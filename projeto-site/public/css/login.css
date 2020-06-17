@@ -18,7 +18,7 @@ body{
     padding-top: 10px;
     padding-left: 10px; 
 } */
-
+/* BOX ESQUERDA (IMG DA ESCOAR) */
 .boxesquerda{
     height: 520px;
     width: 834px;
@@ -28,11 +28,15 @@ body{
     border-radius: 10px;
     margin-left: 10px;
 }
-.boxesquerda #escoar{
+.boxesquerda .escoar{
     width: 100%;
     margin-top: 30px;
 }
-    
+/* FIM BOX ESQUERDA */
+
+
+
+/* INICIO DA LOGINBOX */
 .loginbox {
     background:  #b2b2b225; 
     box-shadow: 1px 0px 15px #b2b2b2;
@@ -43,19 +47,19 @@ body{
     margin-right: 10px;
     border-radius: 10px;
 }
-.loginbox #imglogin{
+.loginbox .imglogin{
    width: 90px;
    padding-left:190px; 
    padding-top: 20px; 
 }
 .loginbox label{
-    font-family: sans-serif;
     font-size: 20px;
     color: white;
-    padding-left: 20px; 
+    font-family: sans-serif;
+    padding-left: 20px;
 }
 .loginbox .input_login_padrao{
-    width: 300px;
+    width: 90%;
     height: 30px;
     margin-bottom: 30px;
     margin-left: 20px;
@@ -84,6 +88,7 @@ body{
     text-align: center;
     font-family:Helvetica;
     font-size: 1.3rem;
+    margin-top: 30px;
     margin-left: 50px;
     float: left;
     background: red;
@@ -92,13 +97,19 @@ body{
     border-radius: 5px;
     width: 30%;
     min-height: 21px;;
+   
+}
+.botao1:hover{
+    color:black;
+    background: white
 }
 .loginbox a {
     color: white;
 }
-/* .loginbox {
+.loginbox .botao2 {
     font-size: 1.3rem;
     color: white;
+    margin-top: 30px;
     margin-right:50px;
     float: right;
     background: red;
@@ -107,4 +118,8 @@ body{
     border-radius: 5px;
     width: 30%;
     min-height: 21px;;
-} */
+}
+.botao2:hover{
+    color:black;
+    background: white
+}
