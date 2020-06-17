@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/simulador.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <label class="logo"><img src="../imagens/escoar123.png" alt="" class="escoar"></label>
+        <ul>
+            <li><a class="active" href="../html/teste.html">HOME</a></li>
+            <li><a href="../html/login.html">SAIR</a></li>
+        </ul>
+    </nav>
+    <!-- SIMULADOR -->
+    <div class="titulo_simulador">
+        <h1>Seja bem vindo a nossa loja!</h1>
+    </div>
+    <div class="tudo_simulador">
+        <div class="simulador">
+            <div class="preco_dos_produtos">
+                <h3 class="titulo_dos_precos">PREÇO DOS PRODUTOS POR CAIXA:</h3> <br><br>
+                <ul>
+                    <li> <span>PERA:</span><br>R$20,00 a Caixa</li>
+                    <br> <br>
+                    <li><span>MAÇÃ:</span><br>R$25,00 a Caixa</li>
+                    <br> <br>
+                    <li><span>CEREJA:</span><br>R$50,00 a Caixa</li>
+                    <br> <br>
+                    <li><span>KIWI:</span><br>R$30,00 a Caixa</li>
+                </ul>
+                <div> <img src="../imagens/buy.png" alt="" class="img_buy"></div>
+            </div>
+            <!-- <aside class="frutas">
+                <div class="img_frutas1">
+                </div>
+                <div class="img_frutas2">
+                </div>
+                <div class="img_frutas3">
+                </div>
+                <div class="img_frutas4">
+
+                </div>
+            </aside> -->
+            <div class="box_left">
+                <div>
+                    <img src="../imagens/lista-de-controle.png" alt="" class="img_listaProduto">
+                </div>
+                <form class="lista_produtos">
+
+
+                    <p>
+                        <label for="qtd_pera">PERA:</label> <br>
+                        <input type="number" id="qtd_pera" placeholder="Quantidade" autofocus>
+
+
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="qtd_maca">MAÇÃ:</label> <br>
+                        <input type="number" id="qtd_maca" placeholder="Quantidade">
+
+
+                    </p>
+                    <br>
+                    <p>
+                        <label for="qtd_cereja">CEREJA:</label> <br>
+                        <input type="number" id="qtd_cereja" placeholder="Quantidade">
+
+
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="qtd_kiwi">KIWI:</label><br>
+                        <input type="number" id="qtd_kiwi" placeholder="Quantidade">
+
+
+                    </p>
+                    <br>
+
+                </form>
+                <button onclick="comprar()" class="btn_comprar">Verificar Compra</button> <br>
+            </div>
+            <div class="box_right">
+                <div>
+                    <img src="../imagens/entrega.png" alt="" id="img_entrega">
+                </div>
+                <h1 id="titulo_compra">Status da sua compra:</h1>
+                <div id="resultado"></div>
+
+                <br>
+                <div id="confirmacao_da_compra"></div>
+                <button onclick="analisar()" class="confirmar_compra" style="display: none">Confirmar Compra</button> <br>
+                <p id="resultado_compra"> </p> <br> <br>
+                <img src="" alt="" id="img_carrinho">
+            </div>
+        </div>
+    </div>
+
+    <!-- RODA PÉ -->
+    <div class="rodape_simulador">
+        <h3> 2007-2020 Escoar Frutas - Frutas Finas</h3>
+    </div>
+</body>
+
+</html>
+<script src="../script.js"></script>

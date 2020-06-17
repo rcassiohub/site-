@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background-position: center;
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    margin-top:40px;
+    background:black;
+}
+
+/* ONDE ESTA O LOCO DA ESCOAR */
+.boxesquerda{
+    height: 520px;
+    width: 834px;
+    float: left;
+    margin-top:50px;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.boxesquerda #escoar{
+    width: 100%;
+    margin-top: 30px;
+}
+/* FORM DO CADASTRO */
+
+.cadastrobox {
+    background:  #b2b2b225; 
+    box-shadow: 1px 0px 15px #b2b2b2;
+    height: 100%;
+    width: 470px;
+    float: right;
+    margin-top:10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+    .titulo_do_cadastro{
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: white;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.cadastrobox label{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px; 
+}
+.cadastrobox .input_cadastrar_padrao{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    border-style: none none solid;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border-image: initial;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    transition: all 0.3s ease-in 0s;
+     /* height: 30px;
+    border-bottom: black solid 5px;
+    border: none; */
+
+}
+.botao_cadastrar{
+    float: right;
+    position: absolute;   
+    margin-top: 45%;    
+    right: 13%;
+    font-family:Helvetica;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 165px;
+    background: red;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 10%;
+    min-height: 21px;;
+}
+.m-erro{
+   color: rgb(243, 212, 212);
+}
+.m-erro li{
+    margin:5px;
+    font-weight:bold;
+    background: rgba(211, 68, 68, 0.568);
+     /* background: rgba(233, 77, 77, 0.363); */
+    list-style: none;
+    padding: 5px;
+    border-radius: 3px;
+}

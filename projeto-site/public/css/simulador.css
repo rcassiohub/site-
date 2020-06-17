@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0; 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.logo .escoar{
+    width: 150px;
+    float: left;
+    padding-top: 5px;
+    margin-left: 2%; 
+}
+
+html, body {
+   font-family: sans-serif;
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0px;
+   scroll-behavior: smooth;
+  }
+
+
+nav {
+   background: #DA0E38; 
+   height: 90px;
+   width: 100%;
+   z-index: 1;
+   border-bottom: 3px solid black;
+   margin-bottom: 20px;
+}
+
+label.logo {
+   color:  white;
+   font-size: 35px;
+   line-height: 80px;
+   padding: 0 100px;
+   font-weight: bold;
+  
+}
+
+nav ul{
+   float: right;
+   margin-right: 20px;
+}
+
+nav ul li {
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+}
+
+nav ul li a {
+   color: white;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+   background: rgb(180, 17, 49);
+}
+a:hover {
+   background: white;
+   transition: .5s;
+   color:black;
+}
+   
+    /* LISTA DE PRODUTOS */
+
+    /* TITULO DO SIMULADOR */
+    .titulo_simulador{
+        background: #DA0E38;
+        height: 100px;
+        width: 91%;
+        /* margin-top: 200px; */
+        margin: auto;
+        border-radius: 10px;
+    }
+    .titulo_simulador h1{
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+    }
+    .preco_dos_produtos{
+        background: #DA0E38;
+        box-shadow: 1px 0px 15px black;
+        float: left;
+        width: 20%;
+        height: 600px;
+        margin-left: 5%;
+        margin-top: 45px;
+        border-radius: 10px;
+    }
+    .preco_dos_produtos .titulo_dos_precos{
+        text-align: center;
+        padding-top: 5px;
+    }
+    .preco_dos_produtos li{
+        text-align: center;
+    }
+    .preco_dos_produtos span{
+        font-size: 20px;
+        font-family: sans-serif;
+        color:black;
+    }
+    .img_buy{
+        width: 100px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    /* LISTA DE PRODUTOS */
+   .img_listaProduto{
+       width: 90px;
+       margin-left: 220px;
+       margin-top:10px;
+   }
+    .box_left{
+        background:  #DA0E38; 
+        box-shadow: 1px 0px 15px black;
+        height: 600px;
+        width: 40%;
+        margin-top: 45px;
+        margin-left: 2.5%;
+        border-radius: 10px;
+        float: left;
+    }
+    .lista_produtos {
+        margin-left: 10%;
+        padding-top:10px;
+    }
+    .lista_produtos input{
+        width: 85%;
+        margin-top:10px;
+        padding: 10px;
+        background: silver;
+        border: 1px black solid;
+        border-radius: 0px 5px 5px 5px;
+    }
+    .lista_produtos p{
+        margin: 0;
+        padding: 0;
+    }
+    .lista_produtos label{
+        background: rgba(0, 0, 0, 0.171);
+        padding:10px;
+        border-radius: 2px;
+        color:white;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+   
+    /* FIM DA LISTA DE PRODUTOS */
+
+    /* BOTAO DE COMPRA */
+    .btn_comprar{
+        margin-top: 30px;
+        height: 50px;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: black;
+        background:rgb(182, 181, 181);
+        border: none;   
+        border-radius: 4px;
+        margin-left: 190px;
+    }
+    .btn_comprar:hover{
+        background: white;
+        /* color: white; */
+    }
+
+
+    /* BOX DIREITA */
+    .box_right{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 600px;
+        width: 25%;
+        float: right;
+        margin-top: 47px;
+        margin-right: 5%;
+        /* border-radius: 10px; */
+    }
+    #titulo_compra{
+        font-size: 20px;
+        text-align: center;
+    }
+    .box_right .total_compra{
+      
+        height: 100px;
+        width: 40%;
+        margin-top: 20px;
+        margin-left: 125px;
+    }
+    #img_entrega{
+        width: 90px;
+        margin-left:130px; 
+        margin-top: 20px; 
+    }
+    .confirmar_compra{
+        width: 30%;
+        min-height: 30px;
+        font-size: 20px;
+        font-family: sans-serif;
+        background:  #DA0E38; 
+        color:black;
+        border:none;
+        border-radius: 5px;
+        margin-left: 120px;
+    }
+    .confirmar_compra:hover{
+        background:rgb(107, 105, 105);
+        color: white;
+    }
+    #resultado_compra{
+        padding-top: 15px;
+        text-align: center;
+        padding-right: 35px;
+        color: #DA0E38
+        }
+    #resultado{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;          
+    }   
+    #img_carrinho{
+    width: 90px;
+    margin-left: 130px;
+    margin-top:15px;
+    }    
+   
+/* 
+    .frutas{
+        float: left;
+        width: 15%;
+        height: 500px;
+        margin-left: 20px;
+        margin-top: 40px;
+       
+        }
+        .img_frutas1{
+        background-image: url('../imagens/pera.png');
+       
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 145px;
+        margin-top:5px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat; 
+        border-radius: 10px;
+        }
+        .img_frutas2{
+background-image: url('../imagens/laranja.png');
+
+display: block;
+margin: auto;
+width: 150px;
+height: 145px;
+margin-top:5px;
+background-position: bottom;
+background-size: 100%;
+background-repeat: no-repeat; 
+border-radius: 10px;
+}
+.img_frutas3{
+background-image: url('../imagens/cereja2.png');
+display: block;
+margin: auto;
+width: 150px;
+height: 145px;
+margin-top:5px;
+background-position: bottom;
+background-size: 100%;
+background-repeat: no-repeat; 
+border-radius: 10px;
+}
+.img_frutas4{
+background-image: url('../imagens/kiwi3.png');
+display: block;
+margin: auto;
+width: 150px;
+height: 145px;
+margin-top:5px;
+background-position: bottom;
+background-size: 100%;
+background-repeat: no-repeat; 
+border-radius: 10px;
+} */
+
+
+
+
+#resultado_compra{
+font-size: 20px;
+border-radius: 10px;
+padding-left: 50px;
+}
+.background{
+    background: yellow;
+    border-radius: 10px;
+    
+}
+.rodape_simulador{
+    background: #DA0E38;
+    height: 100px;
+    margin-top: 800px;
+}
+.rodape_simulador h3{
+text-align: center;
+color: white;
+padding-top: 40px;
+}
