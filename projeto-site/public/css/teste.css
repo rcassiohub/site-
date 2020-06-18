@@ -91,7 +91,7 @@ nav ul li a {
     /* background: blue; */
     width: 100%;
     margin-top:20px;
-    height: 40%;
+    height: 300px;
 }
 .baixo_conteudo{
     
@@ -99,70 +99,125 @@ nav ul li a {
     margin-top:20px;
     height: 60%;
 }
-.conteudo_escoar .foto1{
-background-image: url('../imagens/frutas.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size: 100%;
+.conteudo_escoar{
+    margin-left: 3.5%;
+}
+.div_foto1{
 float: right;
 height: 300px;
-width: 47%;
-margin-top: 0;
-    
+width: 47%;    
+overflow: hidden;
+position: relative;
 }
+.div_foto1 .foto1{ 
+position: absolute;
+width:100%;
+opacity: 0;
+animation-name: animacao;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+.div_foto2{
+float: left;
+height: 300px;
+width: 47%;
+overflow: hidden;
+position: relative;
+margin-left: 35px;
+}.foto1:nth-child(1){
+
+}
+/* INICIO DA ANIMCAO 1 */
+.foto1:nth-child(2){
+    animation-delay: 5s;   
+}
+@keyframes animacao{
+25%{
+opacity: 1;
+transform:scale(1.1,1.1);
+}
+50%{
+opacity: 0;
+}
+}
+/* FIM DA ANIMACAO 1 */
+.div_foto2 .foto2{ 
+position: absolute;
+width:100%;
+opacity: 0;
+animation-name: animacao2;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+
+/* INICIO DA ANIMACAO 2 */
+.foto2:nth-child(1){
+    animation-delay: 5s;   
+}
+@keyframes animacao2{
+25%{
+opacity: 1;
+transform:scale(1.1,1.1);
+}
+50%{
+opacity: 0;
+}
+
+}
+/* FIM DA ANIMACAO 2 */
+
 .texto1{
 /* background: blue; */
 float: left;
 width: 47%;
-min-height: 10px;
-text-align: left;
+min-height: 200px;
 margin-left: 35px;
-
 }
-.conteudo_escoar .foto2{
-background-image: url('../imagens/frutas.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size: 100%;
-float: left;
-height: 300px;
-width: 47%;
-margin-left: 35px; 
+.texto1 p{
+    font-size: 17px;
+   
 }
 .texto2{
 float: right;
-width: 47%;
-min-height: 20px;
+width: 48%;
+min-height: 10px;
 margin-left: 10px;  
 
 }
+.texto2 p{
+    font-size: 17px;
+   
+}
 
 /* BOX ESQUERDA */
-
 .produtos{
 float: right;
-width: 25%;
-min-height: 800px;
-margin-right: 10px;
-margin-top: 30px;
+width: 20%;
+height: 280px;
+margin-top:30px;
+margin-right:0;
+
+
 }
-.img_produto1{
-background-image: url('../imagens/frutas.png');
+.escoar_produtos{
+   
+/* width: 20%;
+height: 280px;
+margin-top:30px;
+margin-right:0;
+padding: 0; */
+
+}
+
+.img_produtos{
 border-radius: 12px;
-display: block;
-margin: auto;
-width: 80%;
+width: 70%;
 height: 150px;
+
 }
-.img_produto{
-background-image: url('../imagens/frutas.png');
-border-radius: 12px;
-display: block;
-margin: auto;
-width: 80%;
-height: 150px;
-margin-top:40px;
-}
+
+
 /* FIM DO MEIO DO SITE */
 
 /*  DIVISÓRIA  */
@@ -185,6 +240,7 @@ padding-top: 40px;
 }
 
 /* CONTATO */
+
 .main-contato{
 position: relative;
 left: 35px;
@@ -195,7 +251,7 @@ border-radius: 10px;
 box-shadow:2px 2px 15px  brown;
 
 }
-.main-contato .input-padrao{
+.main-contato .input_padrao{
 display: block;
 width: 90%;
 padding: 10px;
@@ -216,7 +272,7 @@ border: none;
 font-size: 17px;
 font-family: sans-serif;
 color: white;
-background: rgb(180, 17, 49) ;
+background: rgb(138, 9, 35) ;
 border: none;
 border-radius: 4px;
 }
@@ -242,6 +298,19 @@ text-align: center;
 margin-top: 30px;
 margin-left: 5px;
 color: black;
+}
+/* MENSAGEM DE ERRO */
+.m-erro{
+    color:black;
+ }
+ .m-erro li{
+margin:5px;
+font-weight:bold;
+background: rgba(241, 241, 241, 0.568);
+ /* background: rgba(233, 77, 77, 0.363); */
+list-style: none;
+padding: 5px;
+border-radius: 3px;
 }
 
 /* FIM DO CONTATO */
