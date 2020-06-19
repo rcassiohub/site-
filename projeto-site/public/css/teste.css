@@ -5,10 +5,7 @@
     list-style: none;
     box-sizing: border-box;
 }
-body{
-    background:white;
-  
-}
+
 /* CABEÇALHO */
  .logo .escoar{
      width: 150px;
@@ -80,11 +77,12 @@ nav ul li a {
 /* MEIO DO SITE */
 .titulo h1{
     text-align: center;
+    color: rgb(202, 37, 70);
 }
  .conteudo_escoar{
-    height: 800px;
+    height: 675px;
     width: 70%;
-    margin-top: 30px;
+    margin-left: 3.5%;
    
 }
 .cima_conteudo{
@@ -99,9 +97,6 @@ nav ul li a {
     margin-top:20px;
     height: 60%;
 }
-.conteudo_escoar{
-    margin-left: 3.5%;
-}
 .div_foto1{
 float: right;
 height: 300px;
@@ -112,6 +107,7 @@ position: relative;
 .div_foto1 .foto1{ 
 position: absolute;
 width:100%;
+height: 300px;
 opacity: 0;
 animation-name: animacao;
 animation-duration: 10s;
@@ -124,9 +120,19 @@ width: 47%;
 overflow: hidden;
 position: relative;
 margin-left: 35px;
-}.foto1:nth-child(1){
-
 }
+.div_foto2 .foto2{ 
+position: absolute;
+width:100%;
+height: 300px;
+opacity: 0;
+animation-name: animacao2;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+
+
 /* INICIO DA ANIMCAO 1 */
 .foto1:nth-child(2){
     animation-delay: 5s;   
@@ -141,14 +147,6 @@ opacity: 0;
 }
 }
 /* FIM DA ANIMACAO 1 */
-.div_foto2 .foto2{ 
-position: absolute;
-width:100%;
-opacity: 0;
-animation-name: animacao2;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-}
 
 
 /* INICIO DA ANIMACAO 2 */
@@ -163,20 +161,19 @@ transform:scale(1.1,1.1);
 50%{
 opacity: 0;
 }
-
 }
 /* FIM DA ANIMACAO 2 */
 
+
+
 .texto1{
-/* background: blue; */
 float: left;
 width: 47%;
 min-height: 200px;
 margin-left: 35px;
 }
 .texto1 p{
-    font-size: 17px;
-   
+font-size: 17px;
 }
 .texto2{
 float: right;
@@ -186,35 +183,24 @@ margin-left: 10px;
 
 }
 .texto2 p{
-    font-size: 17px;
-   
+font-size: 17px;
 }
 
-/* BOX ESQUERDA */
+/* BOX DIREITA */
 .produtos{
 float: right;
 width: 20%;
-height: 280px;
-margin-top:30px;
-margin-right:0;
+margin-top:15px;
 
 
 }
-.escoar_produtos{
-   
-/* width: 20%;
-height: 280px;
-margin-top:30px;
-margin-right:0;
-padding: 0; */
 
-}
-
-.img_produtos{
-border-radius: 12px;
-width: 70%;
-height: 150px;
-
+.img_produto img{
+width: 150px;
+padding: 2px;
+border-radius: 10%;
+height: 100px;
+margin-left:35px;
 }
 
 
@@ -223,7 +209,6 @@ height: 150px;
 /*  DIVISÓRIA  */
 
 .divisoria{
-clear: both;
 background:  #DA0E38;
 height: 100px;
 width: 95%;
@@ -238,12 +223,19 @@ font-family: sans-serif;
 font-size: 20px;
 padding-top: 40px;
 }
+/* FIM DA DIVISÓRIA */
 
 /* CONTATO */
-
+.tudo-contato{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:30px;
+}
 .main-contato{
-position: relative;
-left: 35px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
 width: 40%;
 min-height: 400px;
 background: rgb(223, 30, 68);
@@ -280,8 +272,6 @@ border-radius: 4px;
     background: white;
     color: black;
 }
-
-
 .main-contato label{
 padding-left: 20px;
 font-size: 17px;
@@ -313,7 +303,21 @@ padding: 5px;
 border-radius: 3px;
 }
 
+/* IMAGEM DA ESCOAR CONTATO */
+.img_escoar_contato img{
+    width: 600px;
+    padding-bottom: 120px; 
+    filter: brightness(50%);
+   
+}
+/* Frase contato */
+.frase_contato{
+   flex-direction: row;
+}
+
+
 /* FIM DO CONTATO */
+
 
 /* RODA PÉ */
 .rodape{
