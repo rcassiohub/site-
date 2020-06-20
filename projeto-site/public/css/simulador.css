@@ -23,12 +23,12 @@ html, body {
 
 
 nav {
-   background: #DA0E38; 
-   height: 90px;
-   width: 100%;
-   z-index: 1;
-   border-bottom: 3px solid black;
-   margin-bottom: 20px;
+    background: #DA0E38;
+    min-height: 110px;
+    width: 100%;
+    z-index: 1;
+    border-top: 20px solid  #7BB12A;
+    margin-bottom: 20px;
 }
 
 label.logo {
@@ -52,12 +52,12 @@ nav ul li {
 }
 
 nav ul li a {
-   color: white;
-   font-size: 17px;
-   padding: 7px 13px;
-   border-radius: 3px;
-   text-transform: uppercase;
-   background: rgb(180, 17, 49);
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background: #7BB12A;
 }
 a:hover {
    background: white;
