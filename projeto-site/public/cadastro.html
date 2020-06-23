@@ -16,12 +16,12 @@
         <div class="boxesquerda">
             <img src="../imagens/escoar123.png" alt="" id="escoar">
         </div>
-      
-        <h1 class="titulo_do_cadastro">Cadastro de seu usuário</h1>
-        <form class="cadastrobox"> 
 
-          
-            <ul id="mensagemErro" class="m-erro"></ul> 
+
+        <div class="cadastrobox">
+            <h1 class="titulo_do_cadastro">Cadastro de seu usuário</h1>
+
+            <ul id="mensagemErro" class="m-erro"></ul>
             <br>
             <label for="nome_input">Nome:</label>
             <br> <br>
@@ -32,19 +32,17 @@
             <label for="email_input">E-mail:</label>
             <br> <br>
 
-            <input id="email_input" type="email" placeholder="Insira um e-mail"
-                class="input_cadastrar_padrao" required >
+            <input id="email_input" type="email" placeholder="Insira um e-mail" class="input_cadastrar_padrao" required>
             <br> <br>
 
             <label for="senha_input">Senha:</label>
             <br> <br>
 
-            <input id="senha_input"  placeholder="Insira uma senha"
-                class="input_cadastrar_padrao">
+            <input id="senha_input" placeholder="Insira uma senha" class="input_cadastrar_padrao">
             <br> <br>
 
-            <!-- <button type="submit"  value="Cadastrar"> -->
-        </form>
+
+        </div>
     </section>
     <button onclick="enviaCadastro()" class="botao_cadastrar">Cadastrar</button>
 </body>
@@ -54,13 +52,13 @@
         mensagemErro.innerHTML = '';
 
         if (erros.length > 0) {
-            for(var i=0;i < erros.length;i++){
+            for (var i = 0; i < erros.length; i++) {
                 var erro = erros[i]; // percorrendo os TODOS os ERROS       
                 var li = document.createElement("li"); //Cria um elemento do HTML no JS
                 li.innerHTML = erro;
 
                 mensagemErro.appendChild(li); // vai dar um "filho" para o "mensagemErro" 
-            } 
+            }
         }
     }
 
@@ -68,21 +66,21 @@
     function validaCadastro() {
         var erros = []; // vetor "armazena" vários valores em um nome, permitindo a percorrência desses valores 
         if (!nome_input.value) {
-            erros.push ("Preencha o nome"); //Empurra esta informação dentro do vetor "erros"
+            erros.push("Preencha o nome"); //Empurra esta informação dentro do vetor "erros"
         }
-        if( (email_input.value.search("@") == -1) || 
+        if ((email_input.value.search("@") == -1) ||
             (email_input.value.search(".") == -1) ||
-            (email_input.value.search(" ") >=1) ||
-            (email_input.value.search(".com")== -1)||
-            email_input.value[email_input.length - 3 ] != ".com"){ 
-            erros.push("O formato de e-mail é: usuario@dominio.com"); 
-           
+            (email_input.value.search(" ") >= 1) ||
+            (email_input.value.search(".com") == -1) ||
+            email_input.value[email_input.length - 3] != ".com") {
+            erros.push("O formato de e-mail é: usuario@dominio.com");
+
         }
-        if( (senha_input.value.search(" ") >=1 )) 
-            (senha_input.value.search() <=0)
-            {
-             erros.push("A senha não pode possuir espaços em branco e deve conter números")
-            }
+        if ((senha_input.value.search(" ") >= 1))
+            (senha_input.value.search() <= 0)
+        {
+            erros.push("A senha não pode possuir espaços em branco e deve conter números")
+        }
         return erros;
     }
 

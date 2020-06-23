@@ -26,22 +26,11 @@ html, body {
    body{
        background:   rgb(248, 243, 243);
    }
-   /* rgb(248, 94, 107)
-   rgb(226, 226, 226
-   rgb(131, 240, 158)
-   rgb(117, 216, 141)
-   rgb(238, 91, 102)
-   rgb(248, 94, 107)
-   
-   
-   */
- 
 nav {
     background: #DA0E38;
     min-height: 110px;
     width: 100%;
     z-index: 1;
-    /* border-bottom: 2px solid #7BB12A ; */
     border-top: 20px solid  #7BB12A;
 }
 
@@ -109,13 +98,15 @@ nav ul li a {
     margin-top:20px;
     height: 60%;
 }
-.div_foto1{
+.div_foto1{    
+margin-top:13px;    
 float: right;
-height: 300px;
+height: 290px;
 width: 47%;    
 overflow: hidden;
 position: relative;
 }
+/* INICIO DA ANIMCAO 1 */
 .div_foto1 .foto1{ 
 position: absolute;
 width:100%;
@@ -125,6 +116,20 @@ animation-name: animacao;
 animation-duration: 10s;
 animation-iteration-count: infinite;
 }
+.foto1:nth-child(2){
+    animation-delay: 5s;   
+}
+@keyframes animacao{
+25%{
+opacity: 1;
+transform:scale(1.1,1.1);
+}
+50%{
+opacity: 0;
+}
+}
+/* FIM DA ANIMACAO 1 */
+
 .div_foto2{
 float: left;
 height: 300px;
@@ -145,20 +150,6 @@ animation-iteration-count: infinite;
 
 
 
-/* INICIO DA ANIMCAO 1 */
-.foto1:nth-child(2){
-    animation-delay: 5s;   
-}
-@keyframes animacao{
-25%{
-opacity: 1;
-transform:scale(1.1,1.1);
-}
-50%{
-opacity: 0;
-}
-}
-/* FIM DA ANIMACAO 1 */
 
 
 /* INICIO DA ANIMACAO 2 */
@@ -180,25 +171,40 @@ opacity: 0;
 
 .texto1{
 float: left;
-width: 47%;
-min-height: 200px;
-margin-left: 35px;
+width: 48%;
+margin-left: 38px;
 }
 .texto1 p{
 font-size: 17px;
+width: 100%;
+line-height: 38px;
+}
+.texto1 p span{
+font-weight: bold;
 }
 .texto2{
 float: right;
 width: 48%;
-min-height: 10px;
-margin-left: 10px;  
+
 
 }
 .texto2 p{
 font-size: 17px;
+width: 100%;
+line-height: 30px;
+}
+.texto2 p span{
+font-weight: bold;
 }
 
 /* BOX DIREITA */
+.titulo_prod{
+color: black;
+font-family: sans-serif;
+font-size: 20px;
+padding-left: 35px;
+
+}
 .produtos{
 float: right;
 width: 20%;
@@ -218,6 +224,22 @@ margin-left:35px;
 
 /* FIM DO MEIO DO SITE */
 
+/* INSTAGRAM */
+.instagram_div{
+float: right;
+margin-top: 70%;
+margin-right: 35px;
+}
+.instagram{
+width: 40px;
+height: 40px;
+}
+.instagram_escoar{
+margin-top: 73%;
+float: left;
+font-family: sans-serif;
+font-size: 18px;
+}
 /*  DIVISÓRIA  */
 
 .divisoria{
@@ -235,6 +257,8 @@ text-align: center;
 font-family: sans-serif;
 font-size: 20px;
 padding-top: 40px;
+font-style: italic;
+font-weight: bold;
 }
 /* FIM DA DIVISÓRIA */
 
@@ -285,8 +309,8 @@ border: none;
 border-radius: 4px;
 }
 .enviar:hover{
-    background: white;
-    color: black;
+background: white;
+color: black;
 }
 .main-contato label{
 padding-left: 20px;
@@ -300,11 +324,11 @@ margin-left: 20px;
 }
 #titulo_contato{
 text-align: center;
-/* text-decoration-line: underline; */
 margin-top: 30px;
 margin-left: 5px;
 color: #7BB12A;
 }
+
 /* MENSAGEM DE ERRO */
 .m-erro{
     color:black;
@@ -313,7 +337,6 @@ color: #7BB12A;
 margin:5px;
 font-weight:bold;
 background: rgba(241, 241, 241, 0.568);
- /* background: rgba(233, 77, 77, 0.363); */
 list-style: none;
 padding: 5px;
 border-radius: 3px;
@@ -323,7 +346,7 @@ border-radius: 3px;
 .img_escoar_contato img{
     width: 600px;
     padding-bottom: 120px; 
-    filter: brightness(50%);
+    filter: brightness(70%);
    
 }
 /* Frase contato */
@@ -340,9 +363,6 @@ border-radius: 3px;
 min-height: 100px;
 width: 100%;
 background: #DA0E38;
-margin: 0;
-padding: 0;
-border-bottom: black solid 10px;
 margin-top: 100px;
 border-top: 10px solid #7BB12A;
 }
@@ -352,48 +372,8 @@ color: white;
 padding-top: 40px;
 font-family: sans-serif;
 }
-
-
-
-/*.menus {
-   padding: 15px;
-   background: rgb(172, 3, 37);
-   border-radius: 5px;
-   padding-right: 30px;
- }
- .menus :hover{
-     background: white;
-     /* padding: 15px; */
-     /* border-radius: 5px; */
-   
- /* }
-.lista ul li a{ 
-    color: silver;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: helvetica;
-   
+.rodape span{
+font-size: 15px;
+font-style: italic;
+color: black;
 }
-.lista ul li {
-    float: left;
-    display: inline;
-    padding-right: 50px;
-}
-.lista{
-    float: right;
-    padding-top: 45px;
-} */
-
-/* .lista li {
-    float: right;
-    display: inline;
-    text-decoration: none;
-}
-
-
-.escoar{
-    width: 150px;
-    padding-top: 10px;
-    padding-left: 10px; 
-}  */

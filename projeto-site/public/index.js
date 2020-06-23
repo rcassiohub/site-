@@ -10,6 +10,12 @@ function enviaContato() {
 
             mensagemErro.appendChild(li); // vai dar um "filho" para o "mensagemErro" 
         }
+    }else{
+        alert("Suas informações foram transferidas com sucesso!");
+        nome_contato.value='';
+        email_contato.value='';
+        mensagem_contato.value='';
+        tel_contato.value='';
     }
 }
 
@@ -21,8 +27,7 @@ function validaContato() {
     }
     if ((email_contato.value.search("@") == -1) ||
         (email_contato.value.search(".") == -1) ||
-        (email_contato.value.search(" ") >= 1) ||
-        email_contato.value[email_contato.length - 3] != ".com") {
+        (email_contato.value.search(" ") >= 1))  {
         erros.push("O formato de e-mail é: usuario@dominio.com");
 
     }
